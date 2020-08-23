@@ -7,10 +7,28 @@ public class Test1{
 		if(age>150||age<0){
 			System.out.println("您输入的数值有误！");
 		}
-		  else if(age<6){System.out.println("幼儿");}
+		        else if(age<6){System.out.println("幼儿");}
 			else if(age<18){System.out.println("少年");}
 			else if(age<35){System.out.println("青年");}
 			else if(age<60){System.out.println("中年");}
 			else if(age<150){System.out.println("老年");}
 			}
+}
+//用一种更快捷的方式实现
+public class Test1{
+	public static void main (String [] args){
+		System.out.print("请输入您的年龄数值：");
+	    java.util.Scanner s=new java.util.Scanner(System.in);//从用户键盘获取输入的年龄
+		int age=s.nextInt();
+		String str="老年";
+		if(age>150||age<0){
+			System.out.println("您输入的数值有误！");
+		}
+		        else if(age<6){str="幼儿");}
+			else if(age<18){str="少年";}
+			else if(age<35){str="青年";}
+			else if(age<60){str="中年";}
+			else if(age<150){str="老年";}
+			}
+			System.out.println(str);
 }
