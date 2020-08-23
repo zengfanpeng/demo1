@@ -1,0 +1,19 @@
+//娱乐项目
+//If... else ...(if嵌套语句)
+public class Test3{
+   public static void main (String [] args){
+      java.util.Scanner a =new java.util.Scanner(System.in);
+         int b=a.nextInt();
+	   java.util.Scanner c =new java.util.Scanner(System.in);
+		  int d=c.nextInt();
+		  if(b==1){
+			  if(d==1){System.out.println("黑伞");}
+		      else{System.out.println("花伞");}
+		  }
+		  else{
+			  if(d==1){System.out.println("直接走起");}
+			  else {System.out.println("涂防晒霜");}
+		  }
+}
+  
+}
