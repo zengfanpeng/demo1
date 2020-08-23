@@ -1,0 +1,22 @@
+/*编写一个划分学生成绩等级的程序，总分一百分
+  [0~60)分  不及格
+  [60~70)分   及格
+  [70~80)分   中等
+  [80~90)分   良好
+  [90~100]分  优秀
+*/
+public class IfTest2{
+	public static void main (String [] args){
+		System.out.print("请输入您的成绩：");
+	    java.util.Scanner s=new java.util.Scanner(System.in);
+		double score=s.nextDouble();
+		if(score<0||score>100){
+			System.out.println("您输入的成绩不合理！");
+		}
+		  else if(score<60){System.out.println("您的成绩：不及格");}
+			else if(score<70){System.out.println("您的成绩：及格");}
+			else if(score<80){System.out.println("您的成绩：中等");}
+			else if(score<90){System.out.println("您的成绩：良好");}
+			else if(score<=100){System.out.println("您的成绩：优秀");}
+		}
+}
