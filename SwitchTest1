@@ -1,0 +1,28 @@
+/*
+  3,4,5月  春季
+  6,7,8月   夏季
+  9,10,11月  秋季
+  12,1,2月  冬季
+  */
+  //用switch语句实现
+  public class IfTest4{
+	  public static void main(String[] args){
+		  System.out.println("请输入现在是几月份");
+		  java.util.Scanner m=new java.util.Scanner(System.in);
+		  int mouth=m.nextInt();
+		  System.out.println("现在是"+mouth+"月份");
+		  String str="冬季";
+		  switch(mouth){
+			  case  4:case 5:case 3:
+			  str="春季"; 
+			  break;
+			   case  6:case 7:case 8:
+			   str="夏季"; 
+			   break;
+			    case  9:case 10:case 11:
+				str="秋季";
+		  break;  
+		  }
+		  System.out.println("现在是"+str);
+				}
+		  }
