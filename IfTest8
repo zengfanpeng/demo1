@@ -1,0 +1,22 @@
+/*编写程序由键盘输入三个整数分别存入变量num1,num2,num3中，
+*使用if结构
+*并按照从小到大的顺序输出
+*/
+
+public class IfTest8{
+	public static void main(String[] agrs){
+		System.out.println("请输入三个整数");
+		java.util.Scanner a=new java.util.Scanner(System.in);
+		int num1=a.nextInt();
+		int num2=a.nextInt();
+		int num3=a.nextInt();
+		int max=num1>num2?(num1>num3? num1:num3):(num2>num3? num2:num3);//选出最大值
+		int min=num1<num2?(num1<num3? num1:num3):(num2<num3? num2:num3);//选出最小值
+		int middle=0;//如果一个值不是最大值也不是最小值，那它一定是中间值
+		if(num1!=max&num1!=min){middle=num1;}
+		if(num2!=max&num2!=min){middle=num2;}
+		if(num3!=max&num3!=min){middle=num3;}
+		System.out.println(min+"<"+middle+"<"+max);
+	}
+}
+		
