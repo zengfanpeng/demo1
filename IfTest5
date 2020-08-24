@@ -1,0 +1,21 @@
+/*
+  3,4,5月--春季
+  6,7,8月--夏季
+  9,10,11月--秋季
+  12,1,2月--冬季
+  */
+    //if语句实现
+  public class IfTest4{
+	  public static void main(String[] args){
+		  System.out.println("请输入是几月份");
+		  java.util.Scanner m=new java.util.Scanner(System.in);
+		  int mouth=m.nextInt();
+		  System.out.println("现在是"+mouth+"月份");
+		  String str="冬季";
+		  if(mouth>=3&mouth<=5){str="春季";}
+		  else if(mouth>=6&mouth<=8){str="夏季";}
+		  else if(mouth>=9&mouth<=11){str="秋季";}
+		  System.out.println("现在是"+str);
+		  
+	  }
+  }
