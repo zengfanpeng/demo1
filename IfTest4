@@ -1,0 +1,14 @@
+//从用户端输入两个整数，并且比较大小，输出对应的符号
+public class IfTest6{
+	public static void main(String[] agrs){
+		System.out.println("请输入两个整数");
+		java.util.Scanner a=new java.util.Scanner(System.in);
+		int b=a.nextInt();
+		int c=a.nextInt();
+		System.out.println("输入的两个数字为："+b+','+c);
+		//比较b,c两个数字的大小
+	    if(b==c){System.out.println("=");}
+		else if (b<c){System.out.println("<");}
+		else if(b>c){System.out.println(">");}
+	}
+}
