@@ -1,0 +1,14 @@
+//判断用户输入数字的正负和奇偶性，并且打印输出
+public class IfTest6{
+	public static void main(String[] agrs){
+		System.out.println("请输入一个数字");
+		java.util.Scanner a=new java.util.Scanner(System.in);
+		int namber=a.nextInt();
+		if(namber<0){System.out.println("这是个负数");}
+		else if(namber>0){System.out.println("这是个正数");}
+		else if(namber==0){System.out.println("既不是正数，也不是负数");}
+		int remainder=namber/2;
+		if(remainder==1){System.out.println("这是个奇数");}
+		else{System.out.println("这是个偶数");}
+		}
+	}
