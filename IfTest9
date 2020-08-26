@@ -1,0 +1,18 @@
+/*打车起步价8元（3km内）
+*超出3km，超出的每公里1.2元
+*超出5km，超出的每公里1.5元
+在键盘上接收公里数，得出总价钱
+*/
+public class IfTest9{
+	public static void main(String[] args){
+		System.out.println("请输入总行程多少是千米");
+		java.util.Scanner L=new java.util.Scanner(System.in);
+		double s=L.nextDouble();
+		double price=0.00;
+		if(s<=3&s>0){price=8;}
+	    else if(s<=5) {price=8+(s-3)*1.2;}
+		else if(s>5) {price=8+2*1.2+(s-5)*1.5;}
+		System.out.println("车费是"+price+"元");
+
+	}
+}
