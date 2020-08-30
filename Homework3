@@ -1,0 +1,14 @@
+//从控制台输入一个正整数，计算该数的阶乘。例如输入5，阶乘为5*4*3*2*1
+public class HomeWork3{
+	public static void main(String[] args) {	
+	System.out.println("请输入一个正整数");
+	java.util.Scanner n=new java.util.Scanner(System.in);
+	int num=n.nextInt();
+	long k=1;
+	for(int i=1;i<=num;i++){
+		System.out.println(i);
+		k*=i;
+	}
+	System.out.println("该正整数的阶乘为"+k);
+}
+}
