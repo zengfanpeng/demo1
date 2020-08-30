@@ -1,0 +1,21 @@
+/**
+*从控制台输入一个正整数，判断其是否为质数
+*质数是除了1和它本身没有其它的因数的自然数
+*/
+public class HomeWork4{
+	public static void main(String[] args){
+		System.out.println("请输入一个正整数");
+		java.util.Scanner num=new java.util.Scanner(System.in);
+		int i=num.nextInt();
+		int k=1;
+		int j=0;
+		for(;k<=i;k++){
+			if(i%k==0){
+			//	System.out.println(k);
+				j++;
+			}
+		}
+		if(j==2){System.out.println("是质数");}
+		else{System.out.println("不是质数");}
+	}
+}
