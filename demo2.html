@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 取消浏览器自带的样式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            width: 100%;
+            height: 50px;
+            background-color: gray;
+        }
+
+        .banner {
+            width: 980px;
+            height: 150px;
+             margin: 0 auto; /* 居中显示 */
+            background-color: gray;
+            margin-top: 10px;
+        }
+
+        .main {
+            width: 980px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: gray;
+            margin-top: 10px;
+        }
+
+        .main>div {
+            width: 237px;
+            height: 300px;
+            float: left;
+            background-color: pink;
+            margin-right: 10px;
+        }
+
+        .main .last {
+            margin: 0;
+        }
+
+        .footer {
+            height: 200px;
+            background-color: gray;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="last">4</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>
